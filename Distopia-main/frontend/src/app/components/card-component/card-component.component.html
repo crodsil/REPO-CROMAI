@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+        
+    <!-- CSS -->
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+
+  <section>
+    
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper content">
+
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img id="imagem" src="assets/Timyn.jpg" alt="">
+            </div>
+
+            <div class="media-icons">
+              <i class="fa-solid fa-drumstick-bite"></i>
+              <i class="fa-solid fa-mug-hot"></i>
+              <i class="fa-solid fa-burger"></i>  
+            </div>
+
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+
+            <form id="card-{{i}}">
+                <div class="name-profession">
+                    <span class="name">Pet: Tymn</span>
+                    <span class="profession">Poderes da comilança</span>
+
+                
+                    <p>Deixe aqui o seu recado:</p>
+                    <textarea name="my-textarea" [(ngModel)]="capturando" cols="20" rows="3" id="valor"></textarea>
+                        <!--<input type="text">-->
+                        <p id="valorDigitado"></p>                     
+                </div>
+                <div class="button">
+                    <button id="submitButton" class="hireMe" type="submit" (click)="enviar($event)" onclick="alert('Mensagem codificada com sucesso!')">enviar</button>
+                    <button class="reveal">Revelar</button>
+                </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="assets/Kiron.jpg" alt="">
+            </div>
+
+            <div class="media-icons">
+              <i class="fa-solid fa-cookie"></i>
+              <i class="fa-solid fa-bone"></i>
+              <i class="fa-solid fa-bacon"></i>
+            </div>
+
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+            <form id="card-{{2}}">
+                <div class="name-profession">
+                    <span class="name">Pet: Kiron</span>
+                    <span class="profession">Poderes travessos</span>
+
+
+                    <p>Deixe aqui o seu recado:</p>
+                    <textarea name="my-textarea" cols="20" rows="3"></textarea> 
+                </div>
+
+                <div class="button">
+                    <button class="hireMe" type="submit" (click)="enviar($event)">enviar</button>
+                    <button class="reveal">Revelar</button>
+                </div>
+            </form>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="assets/Maile.jpg" alt="">
+            </div>
+
+            <div class="media-icons">
+              <i class="fa-solid fa-flask"></i>
+              <i class="fa-solid fa-cloud-meatball"></i>
+              <i class="fa-solid fa-martini-glass"></i>
+            </div>
+
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+
+            <form id="card-{{3}}">
+                <div class="name-profession">
+                    <span class="name">Pet: Maile</span>
+                    <span class="profession">Poderes brisantes</span>
+
+
+                    <p>Deixe aqui o seu recado:</p>
+                    <textarea name="my-textarea" cols="20" rows="3"></textarea>
+                </div>
+
+                <div class="button">
+                    <button class="hireMe" type="submit" (click)="enviar($event)">enviar</button>
+                    <button class="reveal">Revelar</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
